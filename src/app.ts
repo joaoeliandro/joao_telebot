@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import express from 'express';
 import { Telegraf } from 'telegraf';
+import path from 'path';
 
 const app = express();
 
@@ -32,6 +33,8 @@ bot.on('text', async (ctx) => {
     }
   );
 });
+
+app.use('/', express.static(path.resolve(__dirname, '..', 'public')));
 
 app.get('/send-message', async (request, response) => {
   try {

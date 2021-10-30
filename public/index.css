@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  color: #e1e1e6;
+  background: #121214;
+}
+
+.container {
+  width: 450px;
+  height: 150px;
+  background: #2d2d33;
+
+  border-radius: 15px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
